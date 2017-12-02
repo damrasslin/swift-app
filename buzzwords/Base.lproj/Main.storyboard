@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="buzzwords" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Taco's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aC-AE-Jco">
+                                <rect key="frame" x="163" y="93" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="100" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4B-eh-mtD">
+                                <rect key="frame" x="163" y="-49" width="60" height="481"/>
+                                <state key="normal" title="Push me"/>
+                                <connections>
+                                    <action selector="AnyObject:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lW1-VU-Vtq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y4B-eh-mtD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Aml-eN-UWz"/>
+                            <constraint firstItem="0aC-AE-Jco" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-276" id="CUF-fT-2Tu"/>
+                            <constraint firstItem="0aC-AE-Jco" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FmK-kn-bA8"/>
+                            <constraint firstItem="Y4B-eh-mtD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ecP-9z-zi2"/>
+                            <constraint firstItem="Y4B-eh-mtD" firstAttribute="top" secondItem="0aC-AE-Jco" secondAttribute="bottom" constant="25" id="gfK-h6-Nk5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="coolLabel" destination="0aC-AE-Jco" id="7VA-E9-246"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
